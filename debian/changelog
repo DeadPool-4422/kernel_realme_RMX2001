@@ -1,0 +1,11 @@
+linux-android-realme-RMX2001 (0.0.0+git20240103195015.5bf8d33.droidian) trixie; urgency=medium
+
+  * Create build.sh
+  * made the build.sh executable
+  * created debian folder
+  * added proper kernel-info.mk to debian folder
+  * embedded the clang source directly in the source code using git submodule
+  * Created droidian changes applied defconfig and backed up the original
+
+ -- DeadPool-4422 <dynamicplayer444@gmail.com>  Thu, 04 Jan 2024 01:20:15 +0530
+

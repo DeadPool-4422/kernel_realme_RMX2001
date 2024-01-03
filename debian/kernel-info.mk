@@ -16,7 +16,7 @@ KERNEL_BOOTIMAGE_CMDLINE = bootopt=64S3,32N2,64N2 buildvariant=userdebug droidia
 DEVICE_VENDOR = realme
 
 # Slug for the device model. Like above.
-DEVICE_MODEL = RMX2001
+DEVICE_MODEL = rmx2001
 
 # Slug for the device platform. If unsure, keep this commented.
 # DEVICE_PLATFORM = platform
