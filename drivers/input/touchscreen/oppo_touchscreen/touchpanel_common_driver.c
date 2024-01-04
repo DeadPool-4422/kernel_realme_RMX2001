@@ -4547,10 +4547,10 @@ static int init_input_device(struct touchpanel_data *ts)
     set_bit(EV_ABS, ts->input_dev->evbit);
     set_bit(EV_KEY, ts->input_dev->evbit);
     set_bit(ABS_MT_TOUCH_MAJOR, ts->input_dev->absbit);
-    set_bit(ABS_MT_WIDTH_MAJOR, ts->input_dev->absbit);
+    // set_bit(ABS_MT_WIDTH_MAJOR, ts->input_dev->absbit);
     set_bit(ABS_MT_POSITION_X, ts->input_dev->absbit);
     set_bit(ABS_MT_POSITION_Y, ts->input_dev->absbit);
-    set_bit(ABS_MT_PRESSURE, ts->input_dev->absbit);
+    // set_bit(ABS_MT_PRESSURE, ts->input_dev->absbit);
     set_bit(INPUT_PROP_DIRECT, ts->input_dev->propbit);
     set_bit(BTN_TOUCH, ts->input_dev->keybit);
     if (ts->black_gesture_support) {
