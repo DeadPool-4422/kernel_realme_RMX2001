@@ -53,7 +53,7 @@ int main() {
                         if (fp == NULL) {
                             perror("Failed to open brightness file");
                         } else {
-                            fprintf(fp, "888");
+                            fprintf(fp, "888");  // Set brightness to 888
                             fclose(fp);
                             printf("Brightness set to 888\n");
                         }
@@ -83,7 +83,7 @@ fi
 sudo cp button /usr/bin/
 
 # Create a systemd service
-sudo bash -c 'echo -e "[Unit]\nDescription=Button Service\nAfter=multi-user.target\n\n[Service]\nType=simple\nExecStart=/usr/bin/button\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/button.service'
+sudo bash -c 'echo -e "[Unit]\nDescription=Button Service\nAfter=multi-user.target\n\n[Service]\nType=simple\nUser=root\nExecStart=/usr/bin/button\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/button.service'
 
 # Enable and start the service
 sudo systemctl daemon-reload
@@ -91,4 +91,3 @@ sudo systemctl enable button.service
 sudo systemctl start button.service
 
 echo "Setup complete. The button service is now installed and running."
-
