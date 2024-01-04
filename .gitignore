@@ -60,8 +60,11 @@ modules.builtin
 /*.spec
 
 #
-# Debian directory (make deb-pkg)
+# Ignore the out folder
 #
+/out/
+/OUT/
+
 
 #
 # tar directory (make tar*-pkg)
