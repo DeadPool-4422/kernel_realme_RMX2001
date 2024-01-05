@@ -16,26 +16,25 @@ See Documentation/00-INDEX for a list of what is contained in each file.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
-
 ---
 
-# Kernel Compilation for Droidian
+# Kernel Compilation Guide for Droidian
 
-For detailed instructions on compiling this kernel, please refer to the [Droidian Porting Guide](https://github.com/droidian/porting-guide/blob/master/kernel-compilation.md).
+This document provides instructions for compiling the kernel for Droidian. For comprehensive steps, please refer to the [Droidian Porting Guide](https://github.com/droidian/porting-guide/blob/master/kernel-compilation.md).
 
 ## Compilation Process
-After following the guide, you will find the compiled `boot.img` in the following directory:
-```
-out/KERNEL_OBJ/
-```
-This is generated after executing `RELENG_HOST_ARCH="arm64" releng-build-package` within the Docker container.
+To compile the kernel, follow the steps in the guide. Upon completion, the `boot.img` file will be located in the `out/KERNEL_OBJ/` directory. This file is created after running `RELENG_HOST_ARCH="arm64" releng-build-package` within the Docker environment.
 
 ## Helper Scripts and Assets
-This repository also includes a `helper` directory. It contains scripts and assets for post-installation tasks on Droidian. Currently, it features a script that configures the power button for proper functionality and turning on the screen when the power button is pressed.
+The `helper` directory in this repository contains useful scripts and assets for post-installation on Droidian devices. A notable script included is for configuring the power button to turn on the screen when pressed which works most of the times.
 
----
+### WiFi Setup Instructions:
+- To enable WiFi, connect the Droidian device to a Linux system via USB.
+- Use `dmesg` to determine the RNDIS IP address of the Droidian device.
+- SSH into the device using the IP address (e.g., `ssh droidian@10.??.??.82`). Default password is `1234` 
+- Execute `echo S | sudo tee /dev/wmtWifi` to activate WiFi.
 
-### Notes:
-- Make sure to have a great day ahead!
+### Reminder:
+- Have a great day ahead!
 
 ---
