@@ -1,93 +1,29 @@
 #!/bin/bash
 
 # Check for GCC and install if not present
-if ! command -v gcc &> /dev/null; then
-    echo "GCC is not installed. Installing build-essential..."
-    sudo apt update && sudo apt install build-essential
+if ! command -v wget &> /dev/null; then
+    echo "wget is not installed. Installing wget..."
+    sudo apt update && sudo apt install wget -y
 fi
 
-# Define the C source code
-cat <<'EOF' > button.c
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <linux/input.h>
-#include <sys/time.h>
-
-#define POWER_BUTTON_EVENT "/dev/input/event1"
-#define BACKLIGHT_PATH "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
-#define POWER_KEYCODE KEY_POWER
-#define DELAY_SECONDS 1
-
-int main() {
-    int input_fd = open(POWER_BUTTON_EVENT, O_RDONLY);
-    if (input_fd == -1) {
-        perror("Failed to open power button event");
-        return 1;
-    }
-
-    struct input_event ev;
-    int count = 0;
-    struct timeval last_press_time;
-    struct timeval current_time;
-
-    while (1) {
-        if (read(input_fd, &ev, sizeof(ev)) == -1) {
-            perror("Failed to read power button event");
-            close(input_fd);
-            return 1;
-        }
-
-        if (ev.type == EV_KEY && ev.value == 1) {  // Key press event
-            if (ev.code == POWER_KEYCODE) {
-                count++;
-                if (count % 2 == 0) {  // Every 2nd press
-                    gettimeofday(&current_time, NULL);
-                    double elapsed_time = (current_time.tv_sec - last_press_time.tv_sec) +
-                                          (current_time.tv_usec - last_press_time.tv_usec) / 1000000.0;
-
-                    if (elapsed_time >= DELAY_SECONDS) {
-                        // Perform the desired action after the delay
-                        FILE *fp = fopen(BACKLIGHT_PATH, "w");
-                        if (fp == NULL) {
-                            perror("Failed to open brightness file");
-                        } else {
-                            fprintf(fp, "888");  // Set brightness to 888
-                            fclose(fp);
-                            printf("Brightness set to 888\n");
-                        }
-                    }
-                }
-
-                gettimeofday(&last_press_time, NULL);
-            }
-        }
-    }
-
-    close(input_fd);
-    return 0;
-}
-EOF
-
-# Compile the program
-gcc -o button button.c
-
-# Check if compilation was successful
-if [ ! -f button ]; then
+# Check if pbhelper was successfully downloaded
+if [ ! -f pbhelper ]; then
     echo "Compilation failed."
     exit 1
 fi
 
+# Download PBhelper from this repo
+wget https://raw.githubusercontent.com/DeadPool-4422/kernel_realme_RMX2001/droidian/helpers/power-button/pbhelper
+
 # Copy the compiled program to /usr/bin
-sudo cp button /usr/bin/
+sudo cp pbhelper /usr/bin/
 
 # Create a systemd service
-sudo bash -c 'echo -e "[Unit]\nDescription=Button Service\nAfter=multi-user.target\n\n[Service]\nType=simple\nUser=root\nExecStart=/usr/bin/button\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/button.service'
+sudo bash -c 'echo -e "[Unit]\nDescription=Pbhelper Service\nAfter=multi-user.target\n\n[Service]\nType=simple\nUser=root\nExecStart=/usr/bin/pbhelper\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/pbhelper.service'
 
 # Enable and start the service
 sudo systemctl daemon-reload
-sudo systemctl enable button.service
-sudo systemctl start button.service
+sudo systemctl enable pbhelper.service
+sudo systemctl start pbhelper.service
 
 echo "Setup complete. The button service is now installed and running."
