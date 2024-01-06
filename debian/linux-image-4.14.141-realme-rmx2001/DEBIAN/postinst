@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installmodules/13.11.8
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -e /boot/System.map-4.14.141-realme-rmx2001 ]; then
+		depmod -a -F /boot/System.map-4.14.141-realme-rmx2001 4.14.141-realme-rmx2001 || true
+	fi
+fi
+# End automatically added section

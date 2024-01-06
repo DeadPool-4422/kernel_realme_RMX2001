@@ -1,0 +1,11 @@
+Package: linux-headers-realme-rmx2001
+Source: linux-android-realme-rmx2001
+Version: 0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian
+Architecture: arm64
+Maintainer: Droidian porters <info@droidian.org>
+Installed-Size: 7
+Depends: linux-headers-4.14.141-realme-rmx2001 (= 0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian)
+Section: kernel
+Priority: optional
+Description: Linux kernel for RealMe 6 - Headers (latest)
+ This package depends to the latest kernel headers available for the RealMe 6.

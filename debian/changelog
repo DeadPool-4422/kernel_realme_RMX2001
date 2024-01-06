@@ -1,11 +1,10 @@
-linux-android-realme-RMX2001 (0.0.0+git20240103195015.5bf8d33.droidian) trixie; urgency=medium
+linux-android-realme-rmx2001 (0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian) trixie; urgency=medium
 
-  * Create build.sh
-  * made the build.sh executable
-  * created debian folder
-  * added proper kernel-info.mk to debian folder
-  * embedded the clang source directly in the source code using git submodule
-  * Created droidian changes applied defconfig and backed up the original
+  * override dwz and strip
+  * Fixing Touchscreen Not working
+  * Added gitignore for the out folder so it doesn't uploads the compiled stuff accidentally
+  * Added helper script to get the power button working after droidian installation
+  * Deleted the out folder which got uploaded before the gitignore rule was placed
 
- -- DeadPool-4422 <dynamicplayer444@gmail.com>  Thu, 04 Jan 2024 01:20:15 +0530
+ -- DeadPool-4422 <dynamicplayer444@gmail.com>  Fri, 05 Jan 2024 01:48:32 +0530
 

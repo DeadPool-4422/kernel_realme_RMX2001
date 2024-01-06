@@ -1,0 +1,5 @@
+# Automatically added by dh_installmodules/13.11.8
+if [ -e /boot/System.map-4.14.141-realme-rmx2001 ]; then
+	depmod -a -F /boot/System.map-4.14.141-realme-rmx2001 4.14.141-realme-rmx2001 || true
+fi
+# End automatically added section
