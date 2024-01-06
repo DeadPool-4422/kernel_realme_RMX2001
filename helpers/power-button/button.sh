@@ -14,6 +14,7 @@ cat <<'EOF' > button.c
 #include <unistd.h>
 #include <linux/input.h>
 #include <sys/time.h>
+#include <time.h>  // Include this header for the time function
 
 #define POWER_BUTTON_EVENT "/dev/input/event1"
 #define POWER_KEYCODE KEY_POWER
@@ -31,6 +32,8 @@ int main() {
     struct timeval last_press_time;
     struct timeval current_time;
 
+    srand(time(NULL)); // Seed the random number generator
+
     while (1) {
         if (read(input_fd, &ev, sizeof(ev)) == -1) {
             perror("Failed to read power button event");
@@ -47,12 +50,15 @@ int main() {
                                           (current_time.tv_usec - last_press_time.tv_usec) / 1000000.0;
 
                     if (elapsed_time >= DELAY_SECONDS) {
-                        // Perform the desired action after the delay
-                        int ret = system("echo '22' > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness");
+                        // Generate a random brightness value between 30 and 35
+                        int brightness = (rand() % 6) + 30; // rand() % 6 gives a number between 0-5, + 30 adjusts it to 30-35
+                        char command[100];
+                        sprintf(command, "echo '%d' > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness", brightness);
+                        int ret = system(command);
                         if (ret == -1) {
                             perror("Failed to execute shell command");
                         } else {
-                            printf("Brightness set to 22\n");
+                            printf("Brightness set to %d\n", brightness);
                         }
                     }
                 }
