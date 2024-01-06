@@ -1,5 +1,5 @@
-588fac3cb8b25c6f0454650acc51816b  usr/share/doc/linux-headers-4.14.141-realme-rmx2001/changelog.gz
-164fec798bc24c2ca5c419db4ddadfcf  usr/src/linux-headers-4.14.141-realme-rmx2001/.config
+1b4e2915037db15f658664ed692ac3d1  usr/share/doc/linux-headers-4.14.141-realme-rmx2001/changelog.gz
+552c32267df669048ebbb498022fe34c  usr/src/linux-headers-4.14.141-realme-rmx2001/.config
 c6f476e9470ca7e02f1bfe061d80ea99  usr/src/linux-headers-4.14.141-realme-rmx2001/Documentation/EDID/Makefile
 0f328897c94f31aeac466298e48b2a9b  usr/src/linux-headers-4.14.141-realme-rmx2001/Documentation/Makefile
 9ec993902c3a21e3404479386a905d5f  usr/src/linux-headers-4.14.141-realme-rmx2001/Documentation/cdrom/Makefile
@@ -5158,7 +5158,7 @@ d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/audit/tree.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/audit/watch.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/auditsyscall.h
-c1b94a3c6ac2c605468de7a622a40cd8  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/auto.conf
+c6923febc709ec385d882c55e12a2e9f  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/auto.conf
 c2920b9260eebcc72cd391265a860d37  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/auto.conf.cmd
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/base/full.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/base/small.h
@@ -5186,6 +5186,7 @@ d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bootparam/hung/task/panic/value.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bpf.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bpf/events.h
+d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bpf/jit.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bpf/syscall.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/bql.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/branch/profile/none.h
@@ -5759,7 +5760,7 @@ d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/joystick/xpad/ff.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/joystick/xpad/leds.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kallsyms.h
-df88beb688bd699523fe0ccc0394a9f6  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel.release
+e3fedc74c227fbb6b1949e67ae0b47c9  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel.release
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel/mode/neon.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernfs.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/keyboard/mtk.h
@@ -7247,10 +7248,10 @@ e1b191fdedb8ecbcebc32aec13355dfd  usr/src/linux-headers-4.14.141-realme-rmx2001/
 ecbd99ee2c20601c4a5455c3cad47c00  usr/src/linux-headers-4.14.141-realme-rmx2001/include/dt-bindings/thermal/thermal_exynos.h
 1dec971420ef7f58b74fbc3ea6bed3bb  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/.vdso-offsets.h.cmd
 0b5cecb74edd9b3c5ff68b8aed444cca  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/asm-offsets.h
-3c3915b3a1e623257d0b4b146e179b17  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/autoconf.h
+247c64c4ecb907e007d33ed35d6afed8  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/autoconf.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/autoksyms.h
 c0c6eb5786f78ca8a6ac5d7ebcb58753  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/bounds.h
-9ee9687cc3cc60fc92973fa3c24bae0e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/compile.h
+a1189fd2414b57ffc500d982204e02c6  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/compile.h
 ee306ebc91ce35466ff4abc99577117d  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/timeconst.h
 71ee16a94510e77a893f6479a1ac73b6  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/uapi/linux/version.h
 82cafb2aa70f9b30279c5da17cd80421  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/utsrelease.h

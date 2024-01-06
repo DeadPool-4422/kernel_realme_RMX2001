@@ -1,6 +1,6 @@
-dcc29cf462b973886efbe7bd80043fbf  boot/Image.gz-4.14.141-realme-rmx2001
-9a9818fbaa191626515a8d4135eb6070  boot/System.map-4.14.141-realme-rmx2001
-164fec798bc24c2ca5c419db4ddadfcf  boot/config-4.14.141-realme-rmx2001
+1b357713b080e73ca941e4ca95fc2615  boot/Image.gz-4.14.141-realme-rmx2001
+4549e705430ff8ae90ab9c1c59c5c04c  boot/System.map-4.14.141-realme-rmx2001
+552c32267df669048ebbb498022fe34c  boot/config-4.14.141-realme-rmx2001
 da3c0920f1c18ee216e0c58cdc83af1d  boot/dtb-4.14.141-realme-rmx2001
 9adf522ece8670d54ea4f6c945b9cc76  lib/modules/4.14.141-realme-rmx2001/kernel/drivers/gpu/drm/drm.ko
 b4151b9c20bbb305c9c37bbeea17d96d  lib/modules/4.14.141-realme-rmx2001/kernel/drivers/gpu/drm/drm_kms_helper.ko
@@ -26,4 +26,4 @@ d8930af12c99c42d1ec6f2dd9425a68e  lib/modules/4.14.141-realme-rmx2001/modules.or
 ccf8f3611141656ba5594771bec06202  lib/modules/4.14.141-realme-rmx2001/modules.softdep
 e8e35ac10896fe37f0c91d331721729d  lib/modules/4.14.141-realme-rmx2001/modules.symbols
 bfc76fe8b63070d2f058f81e4e36a901  lib/modules/4.14.141-realme-rmx2001/modules.symbols.bin
-588fac3cb8b25c6f0454650acc51816b  usr/share/doc/linux-image-4.14.141-realme-rmx2001/changelog.gz
+1b4e2915037db15f658664ed692ac3d1  usr/share/doc/linux-image-4.14.141-realme-rmx2001/changelog.gz

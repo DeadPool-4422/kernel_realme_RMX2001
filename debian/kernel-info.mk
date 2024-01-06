@@ -9,7 +9,7 @@ VARIANT = android
 KERNEL_BASE_VERSION = 4.14.141
 
 # The kernel cmdline to use
-KERNEL_BOOTIMAGE_CMDLINE = bootopt=64S3,32N2,64N2 buildvariant=userdebug droidian.lvm.prefer
+KERNEL_BOOTIMAGE_CMDLINE = bootopt=64S3,32N2,64N2 buildvariant=userdebug droidian.lvm.prefer systemd.unified_cgroup_hierarchy=0
 
 # Slug for the device vendor. This is going to be used in the KERNELRELEASE
 # and package names.
