@@ -1,4 +1,4 @@
-961e8b0e965d959048884ffca5cd1d4f  boot/boot.img-4.14.141-realme-rmx2001
-53b52a348794161f67da20f26560e027  boot/recovery.img-4.14.141-realme-rmx2001
+dced4c99074c4afbfe3ef4d52a0f03a6  boot/boot.img-4.14.141-realme-rmx2001
+175fa8d094296c4acf5c52593ab0ba7e  boot/recovery.img-4.14.141-realme-rmx2001
 c953a982e6666d4fc81a1791461fe332  lib/flash-bootimage/4.14.141-realme-rmx2001.conf
-1b4e2915037db15f658664ed692ac3d1  usr/share/doc/linux-bootimage-4.14.141-realme-rmx2001/changelog.gz
+276340ca34f3b51c51574409993f3d7a  usr/share/doc/linux-bootimage-4.14.141-realme-rmx2001/changelog.gz

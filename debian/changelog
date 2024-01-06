@@ -1,4 +1,4 @@
-linux-android-realme-rmx2001 (0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian+git20240106115639.72c9410.droidian+git20240106124310.25a711d.droidian) trixie; urgency=medium
+linux-android-realme-rmx2001 (0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian+git20240106115639.72c9410.droidian+git20240106124310.25a711d.droidian+git20240106131754.c0286f6.droidian) trixie; urgency=medium
 
   * override dwz and strip
   * Fixing Touchscreen Not working
@@ -15,6 +15,7 @@ linux-android-realme-rmx2001 (0.0.0+git20240103195015.5bf8d33.droidian+git202401
   * modified kernel to have modules required for docker
   * made sure everything is ready for docker in defconfig
   * enabled CONFIG_BPF_JIT requied by docker in DEFCONFIG
+  * added cmdline parameter needed by docker
 
- -- DeadPool-4422 <dynamicplayer444@gmail.com>  Sat, 06 Jan 2024 18:13:10 +0530
+ -- DeadPool-4422 <dynamicplayer444@gmail.com>  Sat, 06 Jan 2024 18:47:54 +0530
 

@@ -1,4 +1,4 @@
-1b4e2915037db15f658664ed692ac3d1  usr/share/doc/linux-headers-4.14.141-realme-rmx2001/changelog.gz
+276340ca34f3b51c51574409993f3d7a  usr/share/doc/linux-headers-4.14.141-realme-rmx2001/changelog.gz
 552c32267df669048ebbb498022fe34c  usr/src/linux-headers-4.14.141-realme-rmx2001/.config
 c6f476e9470ca7e02f1bfe061d80ea99  usr/src/linux-headers-4.14.141-realme-rmx2001/Documentation/EDID/Makefile
 0f328897c94f31aeac466298e48b2a9b  usr/src/linux-headers-4.14.141-realme-rmx2001/Documentation/Makefile
@@ -5760,7 +5760,7 @@ d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/joystick/xpad/ff.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/joystick/xpad/leds.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kallsyms.h
-e3fedc74c227fbb6b1949e67ae0b47c9  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel.release
+f8c9ce3d9ad601fbb4f36a04e140bbea  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel.release
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernel/mode/neon.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/kernfs.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/config/keyboard/mtk.h
@@ -7251,7 +7251,7 @@ ecbd99ee2c20601c4a5455c3cad47c00  usr/src/linux-headers-4.14.141-realme-rmx2001/
 247c64c4ecb907e007d33ed35d6afed8  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/autoconf.h
 d41d8cd98f00b204e9800998ecf8427e  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/autoksyms.h
 c0c6eb5786f78ca8a6ac5d7ebcb58753  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/bounds.h
-a1189fd2414b57ffc500d982204e02c6  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/compile.h
+0bb9702d31ba935e28e49b4cb66fabc3  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/compile.h
 ee306ebc91ce35466ff4abc99577117d  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/timeconst.h
 71ee16a94510e77a893f6479a1ac73b6  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/uapi/linux/version.h
 82cafb2aa70f9b30279c5da17cd80421  usr/src/linux-headers-4.14.141-realme-rmx2001/include/generated/utsrelease.h

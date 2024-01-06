@@ -1,4 +1,4 @@
-1b357713b080e73ca941e4ca95fc2615  boot/Image.gz-4.14.141-realme-rmx2001
+405a62d9b92aa25db40e497c5c11301f  boot/Image.gz-4.14.141-realme-rmx2001
 4549e705430ff8ae90ab9c1c59c5c04c  boot/System.map-4.14.141-realme-rmx2001
 552c32267df669048ebbb498022fe34c  boot/config-4.14.141-realme-rmx2001
 da3c0920f1c18ee216e0c58cdc83af1d  boot/dtb-4.14.141-realme-rmx2001
@@ -26,4 +26,4 @@ d8930af12c99c42d1ec6f2dd9425a68e  lib/modules/4.14.141-realme-rmx2001/modules.or
 ccf8f3611141656ba5594771bec06202  lib/modules/4.14.141-realme-rmx2001/modules.softdep
 e8e35ac10896fe37f0c91d331721729d  lib/modules/4.14.141-realme-rmx2001/modules.symbols
 bfc76fe8b63070d2f058f81e4e36a901  lib/modules/4.14.141-realme-rmx2001/modules.symbols.bin
-1b4e2915037db15f658664ed692ac3d1  usr/share/doc/linux-image-4.14.141-realme-rmx2001/changelog.gz
+276340ca34f3b51c51574409993f3d7a  usr/share/doc/linux-image-4.14.141-realme-rmx2001/changelog.gz
