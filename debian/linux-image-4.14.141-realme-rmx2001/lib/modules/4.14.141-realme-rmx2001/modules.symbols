@@ -473,6 +473,7 @@ alias symbol:drm_modeset_lock_interruptible drm
 alias symbol:drm_atomic_helper_commit_hw_done drm_kms_helper
 alias symbol:drm_i2c_encoder_commit drm
 alias symbol:drm_modeset_drop_locks drm
+alias symbol:vxlan_dev_create vxlan
 alias symbol:drm_is_current_master drm
 alias symbol:drm_flip_work_queue drm
 alias symbol:drm_dp_dual_mode_write drm_kms_helper
