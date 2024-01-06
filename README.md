@@ -38,7 +38,7 @@ The `helper` directory contains scripts and assets for post-installation on Droi
 ### Setting Up Phosh and Udev Rules
 - Apply phosh fixes:
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/NeelamArunkumar/droidian-script/main/droid-script.sh | bash
+  sudo apt install curl && curl -fsSL https://raw.githubusercontent.com/NeelamArunkumar/droidian-script/main/droid-script.sh | sudo bash
   ```
 - Set up udev rules and prepare for phosh on the next restart:
   ```bash
