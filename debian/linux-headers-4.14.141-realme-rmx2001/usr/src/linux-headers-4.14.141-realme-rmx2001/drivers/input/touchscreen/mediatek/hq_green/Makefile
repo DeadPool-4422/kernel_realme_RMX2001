@@ -1,2 +1,0 @@
-obj-$(CONFIG_TOUCHSCREEN_MTK_HIMAX_CHIPSET_SPI) += hxchipset/
-#obj-$(CONFIG_TOUCHSCREEN_MTK_NT36xxx_HOSTDL_SPI) += nvt_driver/

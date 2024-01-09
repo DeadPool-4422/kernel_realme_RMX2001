@@ -1,0 +1,21 @@
+linux-android-realme-rmx2001 (0.0.0+git20240103195015.5bf8d33.droidian+git20240104201832.e51ef72.droidian+git20240106115639.72c9410.droidian+git20240106124310.25a711d.droidian+git20240106131754.c0286f6.droidian) trixie; urgency=medium
+
+  * override dwz and strip
+  * Fixing Touchscreen Not working
+  * Added gitignore for the out folder so it doesn't uploads the compiled stuff accidentally
+  * Added helper script to get the power button working after droidian installation
+  * Deleted the out folder which got uploaded before the gitignore rule was placed
+  * Running the c program under the saemon as root
+  * added steps to connect to device using RNDIS ssh and also noted down the turn on wifi command
+  * Update README.md
+  * added the pbhelper binary 
+  * Transitioned to PBhelper from fakeshell (barry)
+  * Fixed script not proceding and logs and error checks
+  * made sure curl is installed before applying the udev droid script
+  * modified kernel to have modules required for docker
+  * made sure everything is ready for docker in defconfig
+  * enabled CONFIG_BPF_JIT requied by docker in DEFCONFIG
+  * added cmdline parameter needed by docker
+
+ -- DeadPool-4422 <dynamicplayer444@gmail.com>  Sat, 06 Jan 2024 18:47:54 +0530
+
