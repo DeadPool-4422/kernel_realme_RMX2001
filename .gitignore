@@ -64,6 +64,7 @@ modules.builtin
 #
 /out/
 /OUT/
+/debian/changelog
 
 
 #
