@@ -32,6 +32,12 @@ use then api29 zip from droidian [ci-images](https://github.com/droidian-images/
 ## Helper Scripts and Assets
 The `helper` directory contains scripts and assets for post-installation on Droidian devices. Included is a script for configuring the power button to turn on the screen.
 
+## Power Button fix
+run the below command through ssh to fix the power button
+```bash
+wget https://raw.githubusercontent.com/DeadPool-4422/kernel_realme_RMX2001/droidian/helpers/power-button/script.sh && chmod +x script.sh && ./script.sh
+```
+
 ### WiFi Setup Instructions
 - Connect the Droidian device to a Linux system via USB.
 - Use `dmesg` to find the RNDIS IP address of the Droidian device.
