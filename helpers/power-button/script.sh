@@ -34,3 +34,4 @@ sudo systemctl enable pbhelper.service
 sudo systemctl start pbhelper.service
 
 echo "Setup complete. The pbhelper service is now installed and running."
+echo '28' > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
