@@ -50,8 +50,8 @@ int main() {
                                           (current_time.tv_usec - last_press_time.tv_usec) / 1000000.0;
 
                     if (elapsed_time >= DELAY_SECONDS) {
-                        // Generate a random brightness value between 20 and 35
-                        int brightness = (rand() % 16) + 20; // rand() % 16 gives a number between 0-15, + 20 adjusts it to 20-35
+                        // Generate a random brightness value between 2030 and 2045
+                        int brightness = (rand() % 16) + 2030; // rand() % 16 gives a number between 0-15, + 20 adjusts it to 20-35
                         char command[100];
                         sprintf(command, "echo '%d' > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness", brightness);
                         int ret = system(command);
